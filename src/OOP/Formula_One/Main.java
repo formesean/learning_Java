@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Teams myTeam = new Teams();
+//        Teams myTeam = new Teams();
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter number of drivers: ");
@@ -23,8 +23,11 @@ public class Main {
             scanner.nextLine();
             System.out.printf("Driver %d nationality: ", i + 1);
             String nationality = scanner.nextLine();
+            System.out.printf("Driver %d priority (1 or 2): ", i + 1);
+            int driverPos = scanner.nextInt();
+            scanner.nextLine();
 
-            driversArray[i] = new Drivers(name, team, age, nationality);
+            driversArray[i] = new Drivers(name, team, age, nationality, driverPos);
         }
 
         System.out.println();
@@ -34,6 +37,13 @@ public class Main {
                     driversArray[j].team + ", " +
                     driversArray[j].age + ", " +
                     driversArray[j].nationality);
+
+            Drivers drivers = driversArray[j];
+            if (drivers.driverPos == 1) {
+                drivers.firstDriver(drivers.team);
+            } else {
+                drivers.secondDriver(drivers.team);
+            }
         }
 
 //        System.out.print("Choose a number between 1 to 10: ");
