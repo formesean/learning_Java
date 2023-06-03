@@ -46,7 +46,7 @@ public class Main {
             }
         }
 
-//        System.out.print("Choose a number between 1 to 10: ");
+//        System.out.print("Choose a number between 1 and 10: ");
 //        int num = scanner.nextInt();
 
 //        System.out.println("\nYour Formula Team is:");
