@@ -16,13 +16,17 @@ public class Main {
         for (int i = 0; i < numDriver; i++) {
             System.out.printf("\nDriver %d name: ", i + 1);
             String name = scanner.nextLine();
+
             System.out.printf("Driver %d team: ", i + 1);
             String team = scanner.nextLine();
+
             System.out.printf("Driver %d age: ", i + 1);
             int age = scanner.nextInt();
             scanner.nextLine();
+            
             System.out.printf("Driver %d nationality: ", i + 1);
             String nationality = scanner.nextLine();
+
             System.out.printf("Driver %d priority (1 or 2): ", i + 1);
             int driverPos = scanner.nextInt();
             scanner.nextLine();
@@ -32,13 +36,10 @@ public class Main {
 
         System.out.println();
         for (int j = 0; j < numDriver; j++) {
-            System.out.println("Driver " + (j + 1) + ": " +
-                    driversArray[j].name + ", " +
-                    driversArray[j].team + ", " +
-                    driversArray[j].age + ", " +
-                    driversArray[j].nationality);
+            System.out.println(driversArray[j].toString(j));
 
             Drivers drivers = driversArray[j];
+
             if (drivers.driverPos == 1) {
                 drivers.firstDriver(drivers.team);
             } else {
