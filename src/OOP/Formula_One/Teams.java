@@ -38,11 +38,11 @@ public class Teams {
             "Mercedes"
     };
 
-    void drsON() {
-        System.out.println("DRS enabled");
-    }
-
-    void drsOFF() {
-        System.out.println("DRS disabled");
+    void drsEnabler(int drs) {
+        if (drs == 1) {
+            System.out.println("DRS enabled\n");
+        } else if (drs == 0) {
+            System.out.println("DRS disabled\n");
+        }
     }
 }

@@ -46,14 +46,14 @@ public class Main {
                 drivers.secondDriver(drivers.team);
             }
 
-            System.out.println("Would you like to enable DRS?\n1 - Enable\n0 - Disable");
+            System.out.println("\nWould you like to enable DRS?\nEnable (1) or Disable (0)");
             int drs = scanner.nextInt();
             scanner.nextLine();
 
             if (drs == 1) {
-                drivers.drsON();
+                drivers.drsEnabler(drs);
             } else {
-                drivers.drsOFF();
+                drivers.drsEnabler(drs);
             }
         }
 
