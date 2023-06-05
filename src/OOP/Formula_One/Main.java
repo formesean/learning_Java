@@ -23,7 +23,7 @@ public class Main {
             System.out.printf("Driver %d age: ", i + 1);
             int age = scanner.nextInt();
             scanner.nextLine();
-            
+
             System.out.printf("Driver %d nationality: ", i + 1);
             String nationality = scanner.nextLine();
 
@@ -44,6 +44,16 @@ public class Main {
                 drivers.firstDriver(drivers.team);
             } else {
                 drivers.secondDriver(drivers.team);
+            }
+
+            System.out.println("Would you like to enable DRS?\n1 - Enable\n0 - Disable");
+            int drs = scanner.nextInt();
+            scanner.nextLine();
+
+            if (drs == 1) {
+                drivers.drsON();
+            } else {
+                drivers.drsOFF();
             }
         }
 

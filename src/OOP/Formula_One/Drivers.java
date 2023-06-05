@@ -1,6 +1,6 @@
 package OOP.Formula_One;
 
-public class Drivers {
+public class Drivers extends Teams {
     String name;
     String team;
     int age;
