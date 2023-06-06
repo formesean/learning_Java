@@ -56,6 +56,8 @@ public class Main {
                 drivers.drsEnabler(drs);
             }
         }
+        
+        scanner.close();
 
 //        System.out.print("Choose a number between 1 and 10: ");
 //        int num = scanner.nextInt();
