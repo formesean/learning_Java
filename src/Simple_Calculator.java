@@ -14,23 +14,20 @@ public class Simple_Calculator {
         String op = scanner.next();
 
         switch (op) {
-            case "+" -> {
+            case "+":
                 int sum = add(num1, num2);
                 System.out.println("\n" + num1 + " + " + num2 + " = " + sum);
-            }
-            case "-" -> {
+            case "-":
                 int difference = subtract(num1, num2);
                 System.out.println("\n" + num1 + " - " + num2 + " = " + difference);
-            }
-            case "*" -> {
+            case "*":
                 int product = multiply(num1, num2);
                 System.out.println("\n" + num1 + " * " + num2 + " = " + product);
-            }
-            case "/" -> {
+            case "/":
                 double quotient = divide(num1, num2);
                 System.out.println("\n" + num1 + " / " + num2 + " = " + quotient);
-            }
-            default -> System.out.println("Please run the program again and input a valid operation :)");
+            default:
+                System.out.println("Please run the program again and input a valid operation :)");
         }
     }
 

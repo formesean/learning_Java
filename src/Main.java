@@ -21,5 +21,7 @@ public class Main {
         System.out.println("\nFull Name: " + firstName + " " + lastName);
         System.out.println("Age: " + age);
         System.out.println(country);
+
+        scanner.close();
     }
 }
