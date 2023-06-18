@@ -29,6 +29,8 @@ public class Simple_Calculator {
             default:
                 System.out.println("Please run the program again and input a valid operation :)");
         }
+
+        scanner.close();
     }
 
     static int add(int x, int y) {
